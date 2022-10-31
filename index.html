@@ -15,17 +15,47 @@
             <div class="col-sm-10">
               <input type="text" readonly class="form-control-plaintext" id="n1" value="Digite um valor">
             </div>
-          </div>
-          <div class="mb-3 row">
+        </div>
+        <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-2 col-form-label">valor 2:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="n2" value="Digite o segundo valor valor">
             </div>
-          </div>
+        </div>
+        <button onclick="soma()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mult()">*</button>
+        <button onclick="div()">/</button>
     </form>
 </body>
 <script>
-    
+  function soma(){
+     val1 = document.getElementById("n1").value;
+     val2 = document.getElementById("n2").value;
+     result = parseFloat(val1) + parseFloat(val2);
+     alert("O Resultado é" + " " + result);
+    }
+
+    function sub(){
+     val1 = document.getElementById("n1").value;
+     val2 = document.getElementById("n2").value;
+     result = parseFloat(val1) - parseFloat(val2);
+     alert("O Resultado é" + " " + result);
+    }
+
+    function mult(){
+     val1 = document.getElementById("n1").value;
+     val2 = document.getElementById("n2").value;
+     result = parseFloat(val1) * parseFloat(val2);
+     alert("O Resultado é" + " " + result);
+    }
+
+    function div(){
+     val1 = document.getElementById("n1").value;
+     val2 = document.getElementById("n2").value;
+     result = parseFloat(val1) / parseFloat(val2);
+     alert("O Resultado é" + " " + result);
+    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
